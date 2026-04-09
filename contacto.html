@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - NOMBRE DEL LOCAL</title>
+
+    <!-- Fuente -->
+    <link href="https://fonts.google.com/specimen/Merriweather">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Merriweather';
+            background-color: #F5F5F5;
+        }
+
+        .header {
+            background-color: #F5F5F5;
+            color: #000000;
+            padding: 20px;
+        }
+
+        .contenedor-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            /* tamaño controlado */
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .texto-header h1 {
+            margin: 0;
+        }
+
+        .texto-header p {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #4E342E;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            color: rgb(233, 216, 216);
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .boton {
+            background: linear-gradient(45deg, #25D366, #1ebe5d);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .boton:hover {
+            background-color: #1ebe5d;
+        }
+
+        footer {
+            background-color: #2C2C2C;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Codigo para vista movil */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor-header">
+            <img src="https://static.vecteezy.com/ti/gratis-vektor/p3/10629488-cafe-logo-design-vorlage-kaffee-logo-design-cafe-logo-design-vektor.jpg"
+                class="logo">
+            <div class="texto-header">
+                <h1>NOMBRE DEL LOCAL</h1>
+                <p>Platos deliciosos a tu gusto 🍽️</p>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <nav>
+
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </nav>
+
+
+    <section>
+        <h2>Información de contacto</h2>
+
+        <p><strong>📍 Dirección:</strong> Tarapoto, Perú</p>
+        <p><strong>📞 WhatsApp:</strong> 914952354</p>
+        <p><strong>⏰ Horario:</strong> 10:00 AM - 10:00 PM</p>
+
+        <br>
+
+        <a href="https://wa.me/51914952354?text=Hola,%20quiero%20hacer%20un%20pedido" class="boton" target="_blank">
+            Pedir por WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 By RestauranteTarapoto</p>
+    </footer>
+
+</body>
+
+</html>

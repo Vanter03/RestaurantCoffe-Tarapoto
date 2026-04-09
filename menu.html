@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - NOMBRE DEL LOCAL</title>
+
+    <!-- Fuente -->
+    <link href="https://fonts.google.com/specimen/Merriweather">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Merriweather';
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #F5F5F5;
+            color: #000000;
+            padding: 20px;
+        }
+
+        .contenedor-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            /* tamaño controlado */
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .texto-header h1 {
+            margin: 0;
+        }
+
+        .texto-header p {
+            margin: 0;
+        }
+
+
+        nav {
+            background-color: #4E342E;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            color: rgb(233, 216, 216);
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+
+        .plato {
+            border: none;
+            padding: 15px;
+            width: 220px;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
+        }
+
+
+        .plato:hover {
+            transform: translateY(-10px);
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        .plato img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            /* recorta bonito */
+            border-radius: 10px;
+        }
+
+
+        footer {
+            background-color: #2C2C2C;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* codigo para vista movil */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor-header">
+            <img src="https://static.vecteezy.com/ti/gratis-vektor/p3/10629488-cafe-logo-design-vorlage-kaffee-logo-design-cafe-logo-design-vektor.jpg"
+                class="logo">
+            <div class="texto-header">
+                <h1>NOMBRE DEL LOCAL</h1>
+                <p>Platos deliciosos a tu gusto 🍽️</p>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <nav>
+
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </nav>
+
+
+    <section>
+        <h2>Nuestros Platos</h2>
+
+        <div class="menu">
+
+            <div class="plato">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+                <h3>Plato1</h3>
+                <p>S/ 25</p>
+            </div>
+
+            <div class="plato">
+                <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92">
+                <h3>Plato2</h3>
+                <p>S/ 30</p>
+            </div>
+
+            <div class="plato">
+                <img src="https://images.unsplash.com/photo-1604908812830-85f0f0a3b2b3">
+                <h3>Plato3</h3>
+                <p>S/ 28</p>
+            </div>
+            <div class="plato">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+                <h3>Plato4</h3>
+                <p>S/ 25</p>
+            </div>
+
+            <div class="plato">
+                <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92">
+                <h3>Plato5</h3>
+                <p>S/ 30</p>
+            </div>
+
+            <div class="plato">
+                <img src="https://images.unsplash.com/photo-1604908812830-85f0f0a3b2b3">
+                <h3>Plato6</h3>
+                <p>S/ 28</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 By RestauranteTarapoto</p>
+    </footer>
+
+</body>
+
+</html>
